@@ -1,0 +1,111 @@
+------------------------------------------------------------------------------------------------------------------------------
+####################################################################################################################
+Baixar todos os arquivos do site
+
+sudo wget -r -np -nH --cut-dirs=3 -R "index.html*" -P /home/eajd/Downloads/SNES https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/
+
+Explicação das opções utilizadas:
+
+    -r ou --recursive: realiza downloads de forma recursiva, ou seja, desce pelos diretórios e baixa todos os arquivos encontrados.
+
+    -np ou --no-parent: impede que o wget suba para diretórios superiores ao especificado na URL, limitando o download ao diretório atual e seus subdiretórios.
+
+    -nH ou --no-host-directories: evita a criação de um diretório com o nome do host, salvando os arquivos diretamente no diretório especificado.
+
+    --cut-dirs=3: remove os três primeiros níveis de diretórios da estrutura original do site ao salvar os arquivos localmente. No caso da URL fornecida, os diretórios files, No-Intro e Nintendo - Super Nintendo Entertainment System serão ignorados na estrutura local.
+
+    -R "index.html*" ou --reject "index.html*": exclui arquivos que correspondam ao padrão "index.html*", evitando o download de páginas de índice desnecessárias.
+
+    -P /home/eajd/Downloads/SNES ou --directory-prefix=/home/eajd/Downloads/SNES: especifica o diretório de destino onde os arquivos serão salvos.
+####################################################################################################################
+------------------------------------------------------------------------------------------------------------------------------
+####################################################################################################################
+Verificar a quantidade de arquivos no site
+
+sudo wget --spider -r -nd -nv https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Nintendo%2064%20%28ByteSwapped%29/ 2>&1 | grep '^--' | wc -l
+
+Explicação do comando:
+
+    wget --spider: verifica a existência dos arquivos sem baixá-los.
+
+    -r: ativa o modo recursivo para percorrer todos os links.
+
+    -nd: evita a criação de diretórios locais.
+
+    -nv: reduz a verbosidade do output.
+
+    2>&1 | grep '^--': filtra as linhas que indicam os arquivos encontrados.
+
+    wc -l: conta o número de linhas, correspondendo ao número de arquivos.
+
+
+####################################################################################################################
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Ainda não Baixados completos:
+####################################################################################################################
+Lista de ROMS
+
+https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Nintendo%2064%20%28ByteSwapped%29/
+https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Nintendo%203DS%20%28Decrypted%29/
+https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Nintendo%20DS%20%28Decrypted%29/
+https://myrient.erista.me/files/Redump/Nintendo%20-%20Wii%20-%20NKit%20RVZ%20%5Bzstd-19-128k%5D/
+https://myrient.erista.me/files/Redump/Nintendo%20-%20Wii%20U%20-%20WUX/
+https://myrient.erista.me/files/Redump/Nintendo%20-%20GameCube%20-%20NKit%20RVZ%20%5Bzstd-19-128k%5D/
+https://myrient.erista.me/files/Redump/Sony%20-%20PlayStation%20Portable/
+https://myrient.erista.me/files/Redump/Sony%20-%20PlayStation/
+https://myrient.erista.me/files/Redump/Sony%20-%20PlayStation%202/
+####################################################################################################################
+
+------------------------------------------------------------------------------------------------------------------------------
+
+####################################################################################################################
+Baixados Completos
+####################################################################################################################
+SNES
+sudo wget -r -np -nH --cut-dirs=3 -R "index.html*" -P /home/eajd/Downloads/SNES https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/
+
+FINALIZADO --2024-11-03 23:03:14--
+Tempo total decorrido: 39m 55s
+Baixados: 4124 arquivos, 3,5G em 8m 0s (7,46 MB/s)
+####################################################################################################################
+------------------------------------------------------------------------------------------------------------------------------
+####################################################################################################################
+NES
+sudo wget -r -np -nH --cut-dirs=3 -R "index.html*" -P /home/eajd/Downloads/NES https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Nintendo%20Entertainment%20System%20%28Headered%29/
+
+
+FINALIZADO --2024-11-04 00:01:17--
+Tempo total decorrido: 1h 10m 47s
+Baixados: 5836 arquivos, 1,1G em 4m 34s (4,18 MB/s)
+####################################################################################################################
+------------------------------------------------------------------------------------------------------------------------------
+####################################################################################################################
+GB
+sudo wget -r -np -nH --cut-dirs=3 -R "index.html*" -P /home/eajd/Downloads/GB https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Game%20Boy/
+
+
+FINALIZADO --2024-11-03 23:25:35--
+Tempo total decorrido: 33m 14s
+Baixados: 2135 arquivos, 244M em 1m 42s (2,39 MB/s)
+####################################################################################################################
+------------------------------------------------------------------------------------------------------------------------------
+####################################################################################################################
+GBC
+sudo wget -r -np -nH --cut-dirs=3 -R "index.html*" -P /home/eajd/Downloads/GBC https://myrient.erista.me/files/No-Intro/Nintendo%20-%20Game%20Boy%20Color/
+
+FINALIZADO --2024-11-03 23:30:33--
+Tempo total decorrido: 37m 16s
+Baixados: 2291 arquivos, 966M em 5m 53s (2,74 MB/s)
+####################################################################################################################
+------------------------------------------------------------------------------------------------------------------------------
+####################################################################################################################
+GBA
+sudo wget -r -np -nH --cut-dirs=3 -R "index.html*" -P /home/eajd/Downloads/GBA hhttps://myrient.erista.me/files/No-Intro/Nintendo%20-%20Game%20Boy%20Advance/
+
+FINALIZADO --2024-11-03 23:49:17--
+Tempo total decorrido: 37m 37s
+Baixados: 3467 arquivos, 13G em 11m 37s (19,6 MB/s)
+####################################################################################################################
+

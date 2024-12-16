@@ -50,7 +50,7 @@ install_packages \
     build-essential zip git curl wget nasm yasm clang cmake ninja-build \
     libgtk-3-dev libxcb-randr0-dev libxdo-dev libxfixes-dev libxcb-shape0-dev \
     libxcb-xfixes0-dev libasound2-dev libpulse-dev libgstreamer1.0-dev \
-    libgstreamer-plugins-base1.0-dev libpam0g-dev
+    libgstreamer-plugins-base1.0-dev libpam0g-dev gparted
 
 # Pacotes de sistema e desempenho
 install_packages \
