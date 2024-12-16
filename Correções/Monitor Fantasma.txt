@@ -1,0 +1,11 @@
+# Corrigir monitor Fantasma
+sudo su
+nano /etc/X11/xorg.conf.d/10-monitor.conf
+
+
+copiar e colar o texto abaixo, salvar com CTRL+O e CTRL+X:
+
+Section "Monitor"
+    Identifier "None-1-1"
+    Option "Ignore" "true"
+EndSection
